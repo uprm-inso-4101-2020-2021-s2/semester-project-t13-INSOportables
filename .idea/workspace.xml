@@ -28,7 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../semester-project-t13-INSOportables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,8 +41,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../semester-project-t13-INSOportables" />
-      <recent name="$PROJECT_DIR$/../semester-project-t13-INSOportables/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -50,7 +50,7 @@
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
-      <package-json value="$PROJECT_DIR$/../semester-project-t13-INSOportables/package.json" />
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
@@ -70,6 +70,7 @@
       <updated>1614643486669</updated>
       <workItem from="1614643487897" duration="956000" />
       <workItem from="1614647722230" duration="567000" />
+      <workItem from="1614651990284" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Merge">
       <created>1614648139597</created>
@@ -83,6 +84,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge" />
