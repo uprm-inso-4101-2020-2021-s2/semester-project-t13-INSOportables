@@ -30,7 +30,7 @@ function Navbar() {
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         PyJaC
-                        <i class='fab fa-typo3' />
+                        <i className='fas fa-compass fa-spin fa-3x'/>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
