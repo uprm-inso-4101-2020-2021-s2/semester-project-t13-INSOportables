@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer-container'>
             <section className='footer-subscription'>
                 <p className='footer-subscription-heading'>
-                    Join the Adventure newsletter to receive our best vacation deals
+                    Join the Adventure Newsletter to receive our best vacation deals
                 </p>
                 <p className='footer-subscription-text'>
                     You can unsubscribe at any time.
@@ -19,7 +19,7 @@ function Footer() {
                             className='footer-input'
                             name='email'
                             type='email'
-                            placeholder='Your Email'
+                            placeholder='Email Address'
                         />
                         <Button buttonStyle='btn--outline'>Subscribe</Button>
                     </form>
@@ -32,29 +32,29 @@ function Footer() {
                         <Link to='/sign-up'>How it works</Link>
                         <Link to='/'>Testimonials</Link>
                         <Link to='/'>Careers</Link>
-                        <Link to='/'>Investors</Link>
+                        <Link to='/'>Privacy Policy</Link>
                         <Link to='/'>Terms of Service</Link>
                     </div>
                     <div class='footer-link-items'>
                         <h2>Contact Us</h2>
                         <Link to='/'>Contact</Link>
                         <Link to='/'>Support</Link>
-                        <Link to='/'>Destinations</Link>
+                        <Link to='/'>Our Story</Link>
                         <Link to='/'>Sponsorships</Link>
                     </div>
                 </div>
                 <div className='footer-link-wrapper'>
                     <div class='footer-link-items'>
                         <h2>Videos</h2>
-                        <Link to='/'>Submit Video</Link>
+                        <Link to='/'>Submit video</Link>
                         <Link to='/'>Ambassadors</Link>
                         <Link to='/'>Agency</Link>
                         <Link to='/'>Influencer</Link>
                     </div>
                     <div class='footer-link-items'>
                         <h2>Social Media</h2>
-                        <Link to='/'>Instagram</Link>
                         <Link to='/'>Facebook</Link>
+                        <Link to='/'>Instagram</Link>
                         <Link to='/'>Youtube</Link>
                         <Link to='/'>Twitter</Link>
                     </div>
@@ -72,7 +72,7 @@ function Footer() {
                         </span>
                         </Link>
                     </div>
-                    <small class='website-rights'>PyJaC © 2021</small>
+                    <medium class='website-rights'>© 2021 PyJaC</medium>
                     <div class='social-icons'>
                         <Link
                             class='social-icon-link facebook'

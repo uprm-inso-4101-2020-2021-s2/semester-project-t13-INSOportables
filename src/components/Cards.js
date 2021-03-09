@@ -26,7 +26,7 @@ function Cards() {
                                 <figure className='cards__item__pic-wrap2'>
                                 </figure>
                                 <div className='cards__item__info'>
-                                    <h5 className='cards__item__text'>{'Need help on what branch might suit you best? Take our quiz!'}</h5>
+                                    <h5 className='cards__item__text'>{'Wanna know which branch might suit you best? Take our quiz!'}</h5>
                                 </div>
                             </Link>
                         </div>
@@ -37,7 +37,7 @@ function Cards() {
                                 <figure className='cards__item__pic-wrap3'>
                                 </figure>
                                 <div className='cards__item__info'>
-                                    <h5 className='cards__item__text'>{'Explore the many subfields of computer science'}</h5>
+                                    <h5 className='cards__item__text'>{'Explore the many subfields of computer science the world offers'}</h5>
                                 </div>
                             </Link>
                         </div>
