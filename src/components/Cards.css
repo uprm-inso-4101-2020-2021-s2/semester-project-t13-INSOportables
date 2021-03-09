@@ -51,7 +51,7 @@ h1 {
     width: 100%;
     padding-top: 67%;
     overflow: hidden;
-    background: url('/src/images/img-netw1.jpg') center center/cover no-repeat;
+    background: url('/src/images/img-netw3.jpg') center center/cover no-repeat;
 }
 
 .cards__item__pic-wrap2 {
@@ -59,7 +59,7 @@ h1 {
     width: 100%;
     padding-top: 67%;
     overflow: hidden;
-    background: url('/src/images/img-q2.jpg') center center/cover no-repeat;
+    background: url('/src/images/img-q3.jpeg') center center/cover no-repeat;
 }
 .cards__item__pic-wrap3 {
     position: relative;

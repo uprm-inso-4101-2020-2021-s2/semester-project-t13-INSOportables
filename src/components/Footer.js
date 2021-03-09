@@ -64,11 +64,15 @@ function Footer() {
                 <div class='social-media-wrap'>
                     <div class='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            TRVL
-                            <i class='fab fa-typo3' />
+                            PyJaC
+                            <span className='fa-stack fa-lg'>
+                            <i className='fas fa-desktop fa-stack-2x'></i>
+                            <i className='fas fa-angle-right fa-stack-1x'></i>
+                            <i className='fas fa-question fa-stack-1x'></i>
+                        </span>
                         </Link>
                     </div>
-                    <small class='website-rights'>TRVL © 2020</small>
+                    <small class='website-rights'>PyJaC © 2021</small>
                     <div class='social-icons'>
                         <Link
                             class='social-icon-link facebook'

@@ -17,7 +17,7 @@
 }
 
 .subfields {
-  background-image: url('/src/images/img-4.jpg');
+  background-image: url('/src/images/img-sub2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 .quiz {
-  background-image: url('/src/images/img-5.jpg');
+  background-image: url('/src/images/img-homev5.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 }
 
 .sign-up {
-  background-image: url('/src/images/img-8.jpg');
+  background-image: url('/src/images/img-signup1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
