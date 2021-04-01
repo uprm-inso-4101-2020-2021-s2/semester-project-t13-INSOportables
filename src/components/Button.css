@@ -16,6 +16,12 @@
     border: 1px solid var(--primary);
 }
 
+.btn--secondary {
+    background-color: #242424;
+    color: #fff;
+    border: 1px solid #242424;
+}
+
 .btn--outline {
     background-color: transparent;
     color: #fff;
@@ -39,5 +45,13 @@
     transition: all 0.3s ease-out;
     background: #fff;
     color: #242424;
+    transition: 250ms;
+}
+
+.btn--secondary:hover {
+    transition: all 0.3s ease-out;
+    background: #45c145;;
+    color: #fff;
+    border: 1px solid #45c145;
     transition: 250ms;
 }

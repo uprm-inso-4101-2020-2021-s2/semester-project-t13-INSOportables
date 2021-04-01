@@ -13,11 +13,11 @@ function Cards() {
                             <Link className='cards__item__link' to={'/subfields'}>
                                 <figure className='cards__item__pic-wrap1' data-category={'Network'}>
                                 </figure>
-                            <div className='cards__item__info'>
-                                <h5 className='cards__item__text'>{'Networking (with other programmers)'}</h5>
-                            </div>
+                                <div className='cards__item__info'>
+                                    <h5 className='cards__item__text'>{'Networking (with other programmers)'}</h5>
+                                </div>
 
-                           </Link>
+                            </Link>
                         </div>
                     </ul>
                     <ul className='cards__items'>

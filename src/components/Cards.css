@@ -61,6 +61,7 @@ h1 {
     overflow: hidden;
     background: url('/src/images/code help.png') center center/cover no-repeat;
 }
+
 .cards__item__pic-wrap3 {
     position: relative;
     width: 100%;
@@ -115,7 +116,7 @@ h1 {
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
-    min-width: 500px ;
+    min-width: 500px;
     text-align: center;
 }
 

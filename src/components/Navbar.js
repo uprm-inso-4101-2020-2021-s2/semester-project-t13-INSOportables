@@ -1,11 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import {Button} from './Button';
+import {Link} from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+
+    const [loggedIn, setLoggedIn] = useState(true);
+
+    useEffect(() => {
+        window.alert(localStorage.getItem("loggedIn"))
+        //console.log(localStorage.getItem("loggedIn"));
+        setLoggedIn(localStorage.getItem("loggedIn"));
+        window.alert(localStorage.getItem("loggedIn"))
+        //console.log(loggedIn);
+    }, [localStorage.getItem("loggedIn")]);
+
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -24,6 +35,7 @@ function Navbar() {
 
     window.addEventListener('resize', showButton);
 
+
     return (
         <>
             <nav className='navbar'>
@@ -37,7 +49,7 @@ function Navbar() {
                         </span>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
@@ -51,7 +63,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                               Take Quiz
+                                Take Quiz
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -64,17 +76,50 @@ function Navbar() {
                             </Link>
                         </li>
 
-                        <li>
-                            <Link
-                                to='/sign-up'
-                                className='nav-links-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                Sign Up
-                            </Link>
-                        </li>
+                        {loggedIn ? (
+                            <>
+                                <li className='nav-item'>
+                                    <Link
+                                        to='/profile'
+                                        className='nav-links'
+                                        onClick={closeMobileMenu}
+                                    >
+                                        Profile
+                                    </Link>
+                                </li>
+                            </>
+
+                        ) : (
+                            <>
+                                <li>
+                                    <Link
+                                        to='/sign-up'
+                                        className='nav-links-mobile'
+                                        onClick={closeMobileMenu}
+                                    >
+                                        Sign Up
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to='/login'
+                                        className='nav-links-mobile'
+                                        onClick={closeMobileMenu}
+                                    >
+                                        Log In
+                                    </Link>
+                                </li>
+                            </>
+                        )}
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    {loggedIn ? (
+                        <></>
+                    ) : (
+                        <>
+                            {button && <Link to='/sign-up'><Button buttonStyle='btn--outline'>SIGN UP</Button> </Link>}
+                            {button && <Link to='/login'><Button buttonStyle='btn--outline'>LOG IN</Button> </Link>}
+                        </>
+                    )}
                 </div>
             </nav>
         </>
