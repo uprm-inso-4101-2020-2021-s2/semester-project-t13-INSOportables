@@ -5,18 +5,18 @@ import {Link} from 'react-router-dom';
 
 function Footer() {
     return (
-        <div className='footer-container'>
-            <section className='footer-subscription'>
-                <p className='footer-subscription-heading'>
+        <div class='footer-container'>
+            <section class='footer-subscription'>
+                <p class='footer-subscription-heading'>
                     Join the Adventure Newsletter to receive our best vacation deals
                 </p>
-                <p className='footer-subscription-text'>
+                <p class='footer-subscription-text'>
                     You can unsubscribe at any time.
                 </p>
-                <div className='input-areas'>
+                <div class='input-areas'>
                     <form>
                         <input
-                            className='footer-input'
+                            class='footer-input'
                             name='email'
                             type='email'
                             placeholder='Email Address'
@@ -25,9 +25,9 @@ function Footer() {
                     </form>
                 </div>
             </section>
-            <div className='footer-links'>
-                <div className='footer-link-wrapper'>
-                    <div className='footer-link-items'>
+            <div class='footer-links'>
+                <div class='footer-link-wrapper'>
+                    <div class='footer-link-items'>
                         <h2>About Us</h2>
                         <Link to='/sign-up'>How it works</Link>
                         <Link to='/'>Testimonials</Link>
@@ -35,7 +35,7 @@ function Footer() {
                         <Link to='/'>Privacy Policy</Link>
                         <Link to='/'>Terms of Service</Link>
                     </div>
-                    <div className='footer-link-items'>
+                    <div class='footer-link-items'>
                         <h2>Contact Us</h2>
                         <Link to='/'>Contact</Link>
                         <Link to='/'>Support</Link>
@@ -43,15 +43,15 @@ function Footer() {
                         <Link to='/'>Sponsorships</Link>
                     </div>
                 </div>
-                <div className='footer-link-wrapper'>
-                    <div className='footer-link-items'>
+                <div class='footer-link-wrapper'>
+                    <div class='footer-link-items'>
                         <h2>Videos</h2>
                         <Link to='/'>Submit video</Link>
                         <Link to='/'>Ambassadors</Link>
                         <Link to='/'>Agency</Link>
                         <Link to='/'>Influencer</Link>
                     </div>
-                    <div className='footer-link-items'>
+                    <div class='footer-link-items'>
                         <h2>Social Media</h2>
                         <Link to='/'>Facebook</Link>
                         <Link to='/'>Instagram</Link>
@@ -60,59 +60,59 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <section className='social-media'>
-                <div className='social-media-wrap'>
-                    <div className='footer-logo'>
+            <section class='social-media'>
+                <div class='social-media-wrap'>
+                    <div class='footer-logo'>
                         <Link to='/' className='social-logo'>
                             PyJaC
-                            <span className='fa-stack fa-lg'>
-                            <i className='fas fa-desktop fa-stack-2x'></i>
-                            <i className='fas fa-angle-right fa-stack-1x'></i>
-                            <i className='fas fa-question fa-stack-1x'></i>
+                            <span class='fa-stack fa-lg'>
+                            <i class='fas fa-desktop fa-stack-2x'></i>
+                            <i class='fas fa-angle-right fa-stack-1x'></i>
+                            <i class='fas fa-question fa-stack-1x'></i>
                         </span>
                         </Link>
                     </div>
-                    <medium className='website-rights'>© 2021 PyJaC</medium>
-                    <div className='social-icons'>
+                    <medium class='website-rights'>© 2021 PyJaC</medium>
+                    <div class='social-icons'>
                         <Link
-                            className='social-icon-link facebook'
+                            class='social-icon-link facebook'
                             to='/'
                             target='_blank'
                             aria-label='Facebook'
                         >
-                            <i className='fab fa-facebook-f'/>
+                            <i class='fab fa-facebook-f'/>
                         </Link>
                         <Link
-                            className='social-icon-link instagram'
+                            class='social-icon-link instagram'
                             to='/'
                             target='_blank'
                             aria-label='Instagram'
                         >
-                            <i className='fab fa-instagram'/>
+                            <i class='fab fa-instagram'/>
                         </Link>
                         <Link
-                            className='social-icon-link youtube'
+                            class='social-icon-link youtube'
                             to='/'
                             target='_blank'
                             aria-label='Youtube'
                         >
-                            <i className='fab fa-youtube'/>
+                            <i class='fab fa-youtube'/>
                         </Link>
                         <Link
-                            className='social-icon-link twitter'
+                            class='social-icon-link twitter'
                             to='/'
                             target='_blank'
                             aria-label='Twitter'
                         >
-                            <i className='fab fa-twitter'/>
+                            <i class='fab fa-twitter'/>
                         </Link>
                         <Link
-                            className='social-icon-link twitter'
+                            class='social-icon-link twitter'
                             to='/'
                             target='_blank'
                             aria-label='LinkedIn'
                         >
-                            <i className='fab fa-linkedin'/>
+                            <i class='fab fa-linkedin'/>
                         </Link>
                     </div>
                 </div>
@@ -120,5 +120,4 @@ function Footer() {
         </div>
     );
 }
-
 export default Footer;
