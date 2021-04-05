@@ -4,8 +4,8 @@ export const COLUMNS = [
         accessor:'subfield_name'
     },
     {
-        Header: 'Branch',
-        accessor: 'subfield_branch'
+        Header: 'Derived Discipline',
+        accessor: 'subfield_discipline'
     },
     {
         Header: 'Description',

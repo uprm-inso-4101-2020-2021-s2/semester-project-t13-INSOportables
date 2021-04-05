@@ -10,10 +10,10 @@ function Navbar() {
     const [loggedIn, setLoggedIn] = useState(true);
 
     useEffect(() => {
-        window.alert(localStorage.getItem("loggedIn"))
+        window.alert(localStorage.getItem("loggedIn"));
         //console.log(localStorage.getItem("loggedIn"));
         setLoggedIn(localStorage.getItem("loggedIn"));
-        window.alert(localStorage.getItem("loggedIn"))
+        window.alert(localStorage.getItem("loggedIn"));
         //console.log(loggedIn);
     }, [localStorage.getItem("loggedIn")]);
 
