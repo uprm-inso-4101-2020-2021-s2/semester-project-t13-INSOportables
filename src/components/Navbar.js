@@ -7,17 +7,18 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
-    const [loggedIn, setLoggedIn] = useState(true);
-
+    const [loggedIn, setLoggedIn] = useState(false);
+/*
     useEffect(() => {
-        window.alert(localStorage.getItem("loggedIn"));
+        //window.alert(localStorage.getItem("loggedIn"));
         //console.log(localStorage.getItem("loggedIn"));
-        setLoggedIn(localStorage.getItem("loggedIn"));
-        window.alert(localStorage.getItem("loggedIn"));
+        //setLoggedIn(localStorage.getItem("loggedIn"));
+        //window.alert(localStorage.getItem("loggedIn"));
         //console.log(loggedIn);
     }, [localStorage.getItem("loggedIn")]);
 
 
+ */
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
