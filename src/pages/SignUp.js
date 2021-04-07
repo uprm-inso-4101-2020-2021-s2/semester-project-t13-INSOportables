@@ -54,7 +54,7 @@ function SignUp() {
                     </Button>
                     <div>
                         <p className="forgot-password text-right">
-                            Already registered <Link href="#" to={"/login"}>log in?</Link>
+                            Already have an account? <Link href="#" to={"/login"}>Log in?</Link>
                         </p>
                     </div>
                 </div>

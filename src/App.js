@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Slide from 'react-reveal/Slide';
 import './App.css';
 import Home from './pages/Home';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -10,13 +11,14 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import GetStarted from "./pages/GetStarted";
 import ForgotPassword from "./pages/ForgotPassword";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
     return (
         <>
             <Router>
-
+                <ScrollToTop />
                 <Navbar/>
                 <Switch>
                     <Route path='/get-started' component={GetStarted}/>
