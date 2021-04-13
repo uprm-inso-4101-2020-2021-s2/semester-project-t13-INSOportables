@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="PyJaC_Project" uuid="d6690d74-a47d-49df-8c9b-4444a8e4369e">
+    <data-source source="LOCAL" name="heroku_0c97ca82e09cf18@us-cdbr-east-03.cleardb.com" uuid="1049f41c-088b-4106-a57c-ec278d43c76d">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
