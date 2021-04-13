@@ -9,32 +9,27 @@ function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
-    //const [errorMessage, setErrorMessage] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
 
     let history = useHistory();
 
-    const login = () => {
+    const login = (event) => {
+        event.preventDefault();
         Axios.post("http://localhost:3001/user/login", {
             username: username,
             password: password,
-
         }).then((response) => {
-
             if (response.data.loggedIn) {
                 localStorage.setItem("loggedIn", true);
                 localStorage.setItem("username", response.data.username);
-                window.location.reload();
+                window.alert("You have been logged in.")
                 history.push("/");
-
-
+                window.location.reload(false);
             } else {
-                //setErrorMessage();
-                window.alert(response.data.message)
-
+                setErrorMessage(response.data.message);
             }
         });
     };
-
     return (
         <form>
             <div className="Login">
@@ -67,7 +62,7 @@ function Login() {
                         LOG IN
                     </Button>
                     <div>
-                        {/*<h1 style={{ color: "red" }}>{errorMessage} </h1>*/}
+                        <h1 style={{ color: "red" }}>{errorMessage} </h1>
                         <p className="forgot-password text-right">
                             Forgot <Link href="#" to={"/forgot-password"}>password?</Link>
                         </p>

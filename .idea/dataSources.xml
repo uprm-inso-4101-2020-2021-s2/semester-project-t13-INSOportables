@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="760d4d5b-e55a-4683-9b7c-2f9d4aa63ea5">
+    <data-source source="LOCAL" name="PyJaC_Project" uuid="d6690d74-a47d-49df-8c9b-4444a8e4369e">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1:3306/PyJaC_Project</jdbc-url>
+      <jdbc-url>jdbc:mysql://us-cdbr-east-03.cleardb.com:3306/heroku_0c97ca82e09cf18</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

@@ -5,12 +5,15 @@ const db = require("../config/db");
 
 //Sign Up
 router.post("/sign-up", (req, res) => {
+    const first_name = req.body.first_name;
+    const last_name = req.body.last_name;
     const username = req.body.username;
-    const password = req.body.password;
     const email = req.body.email;
+    const password = req.body.password;
+    //const confirm_password = req.confirm_password;
     db.query(
-        "INSERT INTO Users (username, password, email) VALUES (?, ?, ?);",
-        [username, password, email],
+        "INSERT INTO user (first_name, last_name, username, email, password) VALUES (?, ?, ?, ?, ?);",
+        [first_name, last_name, username, email, password],
         (err, results) => {
             console.log(err);
             res.send(results);
@@ -22,7 +25,7 @@ router.post("/login", (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
     db.query(
-        "SELECT * FROM Users WHERE username = ?",
+        "SELECT * FROM user WHERE username = ?",
         username,
         (err, results) => {
             if (err) {
