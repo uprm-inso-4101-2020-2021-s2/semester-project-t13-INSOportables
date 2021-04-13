@@ -2,23 +2,37 @@ import React, {useState} from "react";
 import "./SignUp.css";
 import {Button} from '../components/Button';
 
-import Axios from "axios";
 import {Link} from "react-router-dom";
+import Axios from "axios";
+
 
 function SignUp() {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [email, setEmail] = useState("");
 
-    const signUp = () => {
-        console.log(username);
-        Axios.post("http://localhost:3001/user/sign-up", {
-            username: username,
-            password: password,
-            email: email,
-        }).then((response) => {
-            console.log(response);
-        });
+    const [first_name, set_first_name] = useState("");
+    const [last_name, set_last_name] = useState("");
+    const [username, set_username] = useState("");
+    const [email, set_email] = useState("");
+    const [password, set_password] = useState("");
+    //const [confirm_password, set_confirm_password] = useState("");
+
+    const signUp = event => {
+        event.preventDefault();
+         const data = {
+             first_name: first_name,
+             last_name: last_name,
+             username: username,
+             email: email,
+             password: password,
+             // confirm_password: confirm_password
+         };
+         console.log(data)
+         Axios.post("http://localhost:3001/user/sign-up", data).then(
+             res =>{
+                 console.log(res)
+             }).catch(
+                 err=> {
+                     console.log("Error:" + err)
+                 })
     };
 
     return (
@@ -26,24 +40,29 @@ function SignUp() {
             <div className="SignUp">
                 <h1>Sign Up</h1>
                 <div className="SignUpForm">
-                    {/*<label>First name</label>*/}
-                    {/*<input type="text" className="form-control" placeholder="First name" />*/}
+                    <label>First Name</label>
+                    <input type="text" className="form-control" placeholder="Enter First name" onChange={(event) => {
+                        set_first_name(event.target.value);}}/>
 
-                    {/*<label>Last name</label>*/}
-                    {/*<input type="text" className="form-control" placeholder="Last name" />*/}
+                    <label>Last Name</label>
+                    <input type="text" className="form-control" placeholder=" Enter Last name" onChange={(event) => {
+                        set_last_name(event.target.value);}}/>
 
                     <label>Username:</label>
                     <input type="text" placeholder="Enter username" onChange={(event) => {
-                        setUsername(event.target.value);
-                    }}/>
+                        set_username(event.target.value);}}/>
+
+                    <label>Email Address:</label>
+                    <input type="email" placeholder="Enter email" onChange={(event) => {
+                        set_email(event.target.value);}}/>
+
                     <label>Password:</label>
-                    <input type="text" placeholder="Enter password" onChange={(event) => {
-                        setPassword(event.target.value);
-                    }}/>
-                    <label>Email address:</label>
-                    <input type="text" placeholder="Enter email" onChange={(event) => {
-                        setEmail(event.target.value);
-                    }}/>
+                    <input type="password" placeholder="Enter password" onChange={(event) => {
+                        set_password(event.target.value);}}/>
+
+                    {/*<label>Confirm Password:</label>*/}
+                    {/*<input type="password" placeholder="Confirm password" onChange={(event) => {*/}
+                    {/*    set_confirm_password(event.target.value);}}/>*/}
                     <Button
                         className='btns'
                         buttonStyle='btn--secondary'
@@ -53,7 +72,7 @@ function SignUp() {
                         SIGN UP
                     </Button>
                     <div>
-                        <p className="forgot-password text-right">
+                        <p className="already_registered text-right">
                             Already registered <Link href="#" to={"/login"}>log in?</Link>
                         </p>
                     </div>

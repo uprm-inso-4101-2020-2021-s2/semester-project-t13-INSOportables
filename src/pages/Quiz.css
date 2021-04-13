@@ -1,0 +1,29 @@
+.Quiz {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.QuizForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.QuizForm input, button {
+    margin: 10px;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.QuizForm button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}

@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import GetStarted from "./pages/GetStarted";
 import ForgotPassword from "./pages/ForgotPassword";
+import Profile from "./pages/Profile";
+import StudentSurvey from "./pages/StudentSurvey";
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
                     <Route path='/quiz' component={Quiz}/>
                     <Route path='/sign-up' component={SignUp}/>
                     <Route path='/login' component={Login}/>
+                    <Route path='/profile' component={Profile}/>
+                    <Route path='/student-survey' component={StudentSurvey}/>
                 </Switch>
                 <Footer/>
             </Router>
