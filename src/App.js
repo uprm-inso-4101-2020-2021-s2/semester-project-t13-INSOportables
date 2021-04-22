@@ -12,13 +12,14 @@ import GetStarted from "./pages/GetStarted";
 import ForgotPassword from "./pages/ForgotPassword";
 import Profile from "./pages/Profile";
 import StudentSurvey from "./pages/StudentSurvey";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
     return (
         <>
             <Router>
-
+                <ScrollToTop />
                 <Navbar/>
                 <Switch>
                     <Route path='/get-started' component={GetStarted}/>

@@ -6,12 +6,15 @@ import Navbar from "../components/Navbar";
 
 
 function Home() {
-    useEffect(() => {
-        if (!localStorage.getItem("loggedIn")) {
-            localStorage.setItem("loggedIn", false);
-        }
-    }, []);
+    const [loggedIn, setLoggedIn] = useState(true);
 
+    useEffect(() => {
+        window.alert(localStorage.getItem("loggedIn"))
+        //console.log(localStorage.getItem("loggedIn"));
+        setLoggedIn(localStorage.getItem("loggedIn"));
+        window.alert(localStorage.getItem("loggedIn"))
+        //console.log(loggedIn);
+    }, [localStorage.getItem("loggedIn")]);
     return (
         <>
             <HeroSection/>

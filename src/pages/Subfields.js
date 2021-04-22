@@ -3,6 +3,7 @@ import './Subfields.css'
 import {useTable} from 'react-table'
 import DATA from '../table/DATA.json'
 import {COLUMNS} from '../table/Columns'
+import Slide from 'react-reveal/Slide';
 
 function Subfields(){
     const columns = useMemo(() => COLUMNS, []);
@@ -24,7 +25,7 @@ function Subfields(){
         <form>
             <div className="Subfields">
                 <h1>Subfields</h1>
-                <p>This a table listing all subfields</p>
+                <p>This is a table listing all subfields that include the traditional study of computer architecture, programming languages, and software development.</p>
                 <div className="SubfieldsForm">
                     <>
                         <table {...getTableProps()}>
