@@ -53,11 +53,11 @@ function SignUp() {
                         set_username(event.target.value);}}/>
 
                     <label>Email Address:</label>
-                    <input type="email" placeholder="Enter email" onChange={(event) => {
+                    <input type="email" placeholder="Enter email" required onChange={(event) => {
                         set_email(event.target.value);}}/>
 
                     <label>Password:</label>
-                    <input type="password" placeholder="Enter password" onChange={(event) => {
+                    <input type="password" placeholder="Enter password" required onChange={(event) => {
                         set_password(event.target.value);}}/>
 
                     {/*<label>Confirm Password:</label>*/}

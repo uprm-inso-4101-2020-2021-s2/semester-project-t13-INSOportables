@@ -38,7 +38,7 @@ router.post("/login", (req, res) => {
                     res.json({loggedIn: false, message: "Wrong username/password combination!"});
                 }
             } else {
-                res.json({loggedIn: false, message: "User doesn't exist"});
+                res.json({loggedIn: false, message: "User doesn't exist."});
             }
         }
     );

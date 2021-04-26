@@ -27,6 +27,7 @@ function Login() {
                 window.location.reload(false);
             } else {
                 setErrorMessage(response.data.message);
+                window.setInterval('window.location.reload(true);', 1000);
             }
         });
     };
@@ -38,6 +39,7 @@ function Login() {
                 <div className="LoginForm">
                     <label>Username:</label>
                     <input
+                        required
                         type="text"
                         placeholder="Enter Username..."
                         onChange={(event) => {
@@ -45,6 +47,7 @@ function Login() {
                         }}/>
                     <label>Password:</label>
                     <input
+                        required
                         type="password"
                         placeholder="Enter Password..."
                         onChange={(event) => {
