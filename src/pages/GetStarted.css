@@ -11,8 +11,20 @@
     display: flex;
     flex-direction: column;
 }
+.GetStartedForm > p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.GetStartedForm > button {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
 
-.GetStartedForm input, button, p {
+.GetStartedForm input, button{
     margin: 10px;
     width: 400px;
     height: 50px;

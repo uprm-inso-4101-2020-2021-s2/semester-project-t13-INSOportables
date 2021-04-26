@@ -9,7 +9,9 @@ function GetStarted() {
             <div className="GetStarted">
                 <div className="GetStartedForm">
                     <h1>Description</h1>
-                    <p> We wanna help new students understand the difference between the computing disciplines, thus reducing the amount of concentration transfers.</p>
+                    <p> We wanna help new students understand the difference between the computing disciplines,
+                        thus reducing the amount of concentration transfers.</p>
+                    <p></p>
                     <Link to='sign-up'>
                         <Button
                             className='btns'
