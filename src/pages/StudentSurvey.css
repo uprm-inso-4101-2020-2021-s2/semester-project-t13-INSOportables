@@ -15,8 +15,8 @@
     max-width: 400px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.85);
+    margin: 40px auto;
     opacity: 1;
     color: #000;
     line-height: 49px;
@@ -34,7 +34,7 @@ input[type="radio"] {
 
 
 .feedback-button {
-    display: inline-block;
+    display: inline-list-item;
 
     cursor: pointer;
     margin: 0 2% 0 0;
