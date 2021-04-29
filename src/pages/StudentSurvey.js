@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import './StudentSurvey.css'
+import {Button} from "../components/Button";
+import {PieChart} from "./PieChart";
+import {Link} from "react-router-dom";
 //const firebase = require('firebase');
 const uuid = require('uuid');
 //
@@ -187,7 +190,19 @@ class StudentSurvey extends Component {
                         <input type="radio"name="ans11" value="UPRM" onChange={this.answerSelected} /> I want to understand the fundamentals needed in order to make an impactful application and how it can be refined to provide ease of use to our users
                         <input type="radio"name="ans11" value="none" onChange={this.answerSelected} /> None of the above
                     </div>
-                    <input className="feedback-button" type="submit" value="submit"/>
+                    <div>
+                        <Link
+                        to='/pie-chart'>
+                        <Button
+                            className='btns'
+                            buttonStyle='btn--secondary'
+                            buttonSize='btn--medium'
+                        >
+                            SURVEY RESULTS
+                        </Button>
+                        </Link>
+                    </div>
+                    {/*<input className="feedback-button" type="submit" value="submit"/>*/}
                 </form>
             </div>
         }

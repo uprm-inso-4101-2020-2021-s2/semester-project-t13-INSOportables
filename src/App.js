@@ -13,6 +13,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Profile from "./pages/Profile";
 import StudentSurvey from "./pages/StudentSurvey";
 import ScrollToTop from "./components/ScrollToTop";
+import PieChart from "./pages/PieChart";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                     <Route path='/login' component={Login}/>
                     <Route path='/profile' component={Profile}/>
                     <Route path='/student-survey' component={StudentSurvey}/>
+                    <Route path='/pie-chart' component={PieChart}/>
                 </Switch>
                 <Footer/>
             </Router>

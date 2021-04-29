@@ -4,6 +4,7 @@ import Axios from "axios";
 
 import {Link, useHistory} from "react-router-dom";
 import {Button} from "../components/Button";
+import {PieChart} from "./PieChart";
 
 function Profile() {
 
@@ -14,6 +15,10 @@ function Profile() {
         window.alert("You have been logged out.")
         history.push("/");
         window.location.reload(false);
+    }
+
+    const chart = () => {
+        history.push("/pie-chart");
     }
 
     return (
@@ -46,6 +51,14 @@ function Profile() {
                         onClick={logout}
                     >
                         LOGOUT
+                    </Button>
+                    <Button
+                        className='btns'
+                        buttonStyle='btn--secondary'
+                        buttonSize='btn--medium'
+                        onClick={chart}
+                    >
+                        SURVEY RESULTS
                     </Button>
                 </div>
             </div>
