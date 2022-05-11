@@ -39,11 +39,11 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        PyJaC
+                        CSGuide
                         <span className='fa-stack fa-lg'>
-                            <i className='fas fa-desktop fa-stack-2x'></i>
-                            <i className='fas fa-angle-right fa-stack-1x'></i>
-                            <i className='fas fa-question fa-stack-1x'></i>
+                            {/*<i className='fas fa-desktop fa-stack-2x'></i>*/}
+                            {/*<i className='fas fa-angle-right fa-stack-1x'></i>*/}
+                            {/*<i className='fas fa-question fa-stack-1x'></i>*/}
                         </span>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>

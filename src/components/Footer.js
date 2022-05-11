@@ -8,7 +8,7 @@ function Footer() {
         <div class='footer-container'>
             <section class='footer-subscription'>
                 <p class='footer-subscription-heading'>
-                    Join the Adventure Newsletter to receive our best vacation deals
+                    Join and bundle your flight and hotel together to save on your next vacation.
                 </p>
                 <p class='footer-subscription-text'>
                     You can unsubscribe at any time.
@@ -19,9 +19,9 @@ function Footer() {
                             class='footer-input'
                             name='email'
                             type='email'
-                            placeholder='Email Address'
+                            placeholder='Email Address Here'
                         />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
+                        <Button buttonStyle='btn--outline'>Subscribe!</Button>
                     </form>
                 </div>
             </section>
@@ -39,7 +39,7 @@ function Footer() {
                         <h2>Contact Us</h2>
                         <Link to='/'>Contact</Link>
                         <Link to='/'>Support</Link>
-                        <Link to='/'>Our Story</Link>
+                        <Link to='/'>The Beginning</Link>
                         <Link to='/'>Sponsorships</Link>
                     </div>
                 </div>
@@ -64,15 +64,15 @@ function Footer() {
                 <div class='social-media-wrap'>
                     <div class='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            PyJaC
-                            <span class='fa-stack fa-lg'>
-                            <i class='fas fa-desktop fa-stack-2x'></i>
-                            <i class='fas fa-angle-right fa-stack-1x'></i>
-                            <i class='fas fa-question fa-stack-1x'></i>
-                        </span>
+                            CSGuide
+                        {/*    <span class='fa-stack fa-lg'>*/}
+                        {/*    <i class='fas fa-desktop fa-stack-2x'></i>*/}
+                        {/*    <i class='fas fa-angle-right fa-stack-1x'></i>*/}
+                        {/*    <i class='fas fa-question fa-stack-1x'></i>*/}
+                        {/*</span>*/}
                         </Link>
                     </div>
-                    <medium class='website-rights'>© 2021 PyJaC</medium>
+                    <medium class='website-rights'>© 2022 CSGuide</medium>
                     <div class='social-icons'>
                         <Link
                             class='social-icon-link facebook'

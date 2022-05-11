@@ -106,18 +106,18 @@ class StudentSurvey extends Component {
 
         if (this.state.studentName == '' && this.state.isSubmitted == false) {
             name = <div>
-                <h1>Hey! Please enter your name.</h1>
+                <h1>Hey! First enter your name:</h1>
                 <form onSubmit={this.studentNameSubmit}>
-                    <input className="sName" type="text" placeholder="Please Enter Your Name" ref="name"/>
+                    <input className="sName" type="text" placeholder="Your Name Here" ref="name"/>
                 </form>
             </div>;
         }
         else if (this.state.studentName !== '' && this.state.isSubmitted == false) {
             name = <div>
-                <h1>Welcome {this.state.studentName} to our survey!</h1>
+                <h1>Welcome {this.state.studentName} to our survey! :)</h1>
             </div>;
             questions = <div>
-                <h2>Here are some questions</h2>
+                <h2>Here are the questions:</h2>
                 <form onSubmit={this.surveySubmit}>
 
                     <div className="card">
@@ -213,7 +213,7 @@ class StudentSurvey extends Component {
 
                 {name}
 
-                =======================
+
 
                 {questions}
 

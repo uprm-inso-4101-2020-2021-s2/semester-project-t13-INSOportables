@@ -10,7 +10,7 @@ function GetStarted() {
                 <div className="GetStartedForm">
                     <h1>Description</h1>
                     <p> We wanna help new students understand the difference between the computing disciplines,
-                        thus reducing the amount of concentration transfers.</p>
+                        thus reducing the amount of concentration transfers to get a better understanding and reach your goals.</p>
                     <p></p>
                     <Link to='sign-up'>
                         <Button

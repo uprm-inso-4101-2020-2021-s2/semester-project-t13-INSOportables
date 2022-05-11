@@ -22,6 +22,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
+
 }
 
 .GetStartedForm input, button{
@@ -29,10 +30,12 @@
     width: 400px;
     height: 50px;
     font-size: 20px;
+
 }
 
 .GetStartedForm button:hover {
     cursor: pointer;
+
 }
 
 h1 {

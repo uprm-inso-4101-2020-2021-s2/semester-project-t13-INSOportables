@@ -6,7 +6,7 @@ const data = {
     datasets: [
         {
             label: '# of Votes',
-            data: [3, 1, 2, 1, 4, 4, 4, 3],
+            data: [3, 1, 5, 1, 4, 4, 4, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

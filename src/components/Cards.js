@@ -14,7 +14,7 @@ function Cards() {
                                 <figure className='cards__item__pic-wrap1' data-category={'Network'}>
                                 </figure>
                                 <div className='cards__item__info'>
-                                    <h5 className='cards__item__text'>{'Networking (with other programmers)'}</h5>
+                                    <h5 className='cards__item__text'>{'Networking'}</h5>
                                 </div>
 
                             </Link>
@@ -37,7 +37,7 @@ function Cards() {
                                 <figure className='cards__item__pic-wrap3'>
                                 </figure>
                                 <div className='cards__item__info'>
-                                    <h5 className='cards__item__text'>{'Explore the many subfields of computer science the world offers'}</h5>
+                                    <h5 className='cards__item__text'>{'Explore the many subfields of computer science that the world offers'}</h5>
                                 </div>
                             </Link>
                         </div>

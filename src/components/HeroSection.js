@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import {Button} from './Button';
 import './HeroSection.css';
-import video1 from '../videos/loophomescreenvideo.mp4';
+import video1 from '../videos/videointro.mp4';
 import {Link} from "react-router-dom";
 
 function HeroSection() {
@@ -11,8 +11,8 @@ function HeroSection() {
             <video autoPlay loop muted>
                 <source src={video1} type={'video/mp4'}/>
             </video>
-            <h1>print("Hello, programmer")</h1>
-            <p>Hello, programmer</p>
+            <h1>print("Welcome to the future")</h1>
+            <p>This is your future, programmer</p>
             <div className='hero-btns'>
                 <Link to='get-started'>
                     <Button
@@ -20,7 +20,7 @@ function HeroSection() {
                         buttonStyle='btn--outline'
                         buttonSize='btn--large'
                     >
-                        GET STARTED
+                        LET'S START
                     </Button>
                 </Link>
                 <Button

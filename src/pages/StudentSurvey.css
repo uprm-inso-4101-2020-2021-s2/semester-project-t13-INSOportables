@@ -1,9 +1,9 @@
-/*body{*/
-/*    background-color: #0c70b4;*/
-/*    color: #fff;*/
-/*    font: normal 400 18px "PT Sans", sans-serif;*/
-/*    -webkit-font-smoothing: antialiased;*/
-/*}*/
+body{
+    background-color: #a0bed3;
+    color: #fff;
+    font: normal 400 18px "PT Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
 
 .card {
     /*
